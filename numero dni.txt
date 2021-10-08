@@ -1,0 +1,6 @@
+def calculaLetra(numeroDni):
+  letra = ["T","R","W","A","G","M","Y","F","P","D","X","B","N","J","Z","S","Q","V","H","L","C","K","E"]
+  return letra[numeroDni%23]
+print("Este programa calcula la letra del DNI")
+numeroDni = int(input("DNI: "))
+print("Tu DNI completo es: {}{}".format(numeroDni,calculaLetra(numeroDni)))
